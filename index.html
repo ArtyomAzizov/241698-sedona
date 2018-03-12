@@ -80,14 +80,16 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
         <!--Здесь будет форма-->
-         <form  oninput="sumoutput.value=sumcount.value" action="/echo" method="post">
+         <form action="/echo" method="post">
+
          	<div class="date">
-         	<label>Дата заезда <input type="date" name=""></label><br>
-         	<label>Дата выезда<input type="date" name=""></label><br>
+         	<label>Дата заезда:<input type="date" name="arrive"></label><br>
+         	<label>Дата выезда:<input type="date" name="leave"></label><br>
          </div>
          
-         	  <div class="half-width">Взрослые: <input type="number" min="1" max="10" id="" name="Adults" value="2">
-         	   Дети: <input type="number" min="1" max="10" id="day" name="Children" value="0"></div>
+         	  <div class="number_people">
+         	  	<label>Взрослые: <input type="number" min="1" max="10" id="" name="Adults" value="2"></label>
+         	  <label> Дети: <input type="number" min="1" max="10" id="day" name="Children" value="0"></label></div>
          	  
         
          	<input type="submit" name="find" value="Найти">
@@ -96,7 +98,7 @@
       </section>
     </main>
     <footer class="main-footer footer-index">
-      <p class="hashtag">#VISITSEDONA</p>
+      <p class="hashtag">#VisitSedona</p>
       <ul class="footer-social">
         <li><a class="social-btn" href="#">Twitter</a></li>
         <li><a class="social-btn" href="#">Facebook</a></li>

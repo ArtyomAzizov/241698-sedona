@@ -19,6 +19,33 @@
     </nav>
   </header>
   <main>
+    <form action="/echo" method="post">
+      <div class="infrastructure">
+        Инфраструктура:
+        <label>
+          <input type="radio" name="infrastructure-pool" value="Басссейн">Басссейн</label>
+        <label>
+          <input type="radio" name="infrastructure-parking" value="Парковка">Парковка</label>
+        <label>
+          <input type="radio" name="infrastructure-wifi" value="Wi-Fi">Wi-Fi</label>
+      </div>
+      <div class="type_housing">
+        Тип жилья:
+        <label>
+          <input type="radio" name="hotel" value="Гостиница">Гостиница</label>
+        <label>
+          <input type="radio" name="motel" value="Мотель">Мотель</label>
+        <label>
+          <input type="radio" name="apartments">Аппартаменты</label>
+      </div>
+      <div class="cost">
+        Стоимость в сутки(р):
+        <br>
+        <output name="sum"></output>
+        <br> от 0
+        <input type="range" min="0" max="3000">до 3000
+      </div>
+    </form>
     <section class="filters">
       <h1 class="visually-hidden">Выбор гостиницы</h1>
     </section>
@@ -42,7 +69,7 @@
         <li class="hotels-item">
           <img src="img/amara.jpg" width="150" height="100" alt="amara resort & spa">
           <div class="hotels-description">
-            <h2 class="hotels"><a href="#">Amara resort & spa</a></h2>
+            <h2 class="hotels"><a href="#">Amara resort &amp; spa</a></h2>
             <div class="hotels-description-left">
               <span>Гостиница</span>
               <a class="btn" href="#">Подробнее</a>
