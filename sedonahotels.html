@@ -21,21 +21,21 @@
   <main>
     <section class="filters">
       <h1 class="visually-hidden">Фильтр гостиниц</h1>
-      <form class="filters-form" action="/echo" method="post">
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
-          <input type="checkbox" name="infrastructure-pool" value="Басссейн" id="pool">
+          <input type="checkbox" name="infrastructure-pool" id="pool">
           <label for="pool">Басссейн</label>
-          <input type="checkbox" name="infrastructure-parking" value="Парковка" id="parking">
+          <input type="checkbox" name="infrastructure-parking" id="parking">
           <label for="parking">Парковка</label>
-          <input type="checkbox" name="infrastructure-wifi" value="Wi-Fi" id="wifi">
+          <input type="checkbox" name="infrastructure-wifi" id="wifi">
           <label for="wifi">Wi-Fi</label>
         </fieldset>
         <fieldset class="type_housing">
           <legend>Тип жилья:</legend>
-          <input type="checkbox" name="hotel" value="Гостиница" id="hotel">
+          <input type="checkbox" name="hotel" id="hotel">
           <label for="hotel">Гостиница</label>
-          <input type="checkbox" name="motel" value="Мотель" id="motel">
+          <input type="checkbox" name="motel" id="motel">
           <label for="motel">Мотель</label>
           <input type="checkbox" name="apartments" id="apartments">
           <label for="apartments">Аппартаменты</label>
@@ -43,6 +43,7 @@
         <fieldset class="cost">
           <legend>Стоимость в сутки(р):</legend>
           <!-- Здесь будет сложный фильтр -->
+          <button>Отправить</button>
         </fieldset>
       </form>
     </section>
@@ -55,8 +56,8 @@
         <li class="sorting-item"><a href="#">По типу</a></li>
         <li class="sorting-item"><a href="#">По рейтингу</a></li>
         <li class="sorting-arrows">
-          <a class="sorting-up" href="#">По возрастанию</a>
-          <a class="sorting-down" href="#">По убыванию</a>
+          <a class="sorting-up" href="#"><span class="visually-hidden">По возрастанию</span></a>
+          <a class="sorting-down" href="#"><span class="visually-hidden">По убыванию</span></a>
         </li>
       </ul>
     </section>
