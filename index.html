@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <a class="main-header-logo" href="index.html"><img src="img/index-logo.png" alt="Седона" width="138" height="70"></a>
+      <a class="main-header-logo" href="index.html"><img src="img/index-logo.png" width="138" height="70" alt="Седона"></a>
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item"><a href="info.html">Информация</a></li>
@@ -22,17 +22,17 @@
     <main class="page-main">
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img src="img/welcome.png" alt="welcome" width="768" height="512">
+        <img src="img/welcome.png" width="768" height="512" alt="welcome">
         <p class="welcome-title">Седона-небольшой городок в аризоне,заслуживающий большего!</p>
         <p class="welcome-text">Рассмотрим пять причин, почему Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="reasons">
         <div class="reason-blue">
           <h3>Настоящий городок</h3>
-          <span>— №1 —</span>
+          <span>&mdash; №1 &mdash;</span>
           <p>Седона— не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src="img/reason1.jpg" alt="Седона" width="512" height="256">
+        <img src="img/reason1.jpg" width="800" height="401" alt="Седона">
       </section>
       <section class="features">
         <ul class="feauters-list">
@@ -51,27 +51,27 @@
         </ul>
       </section>
       <section class="reasons">
-        <img src="img/reason2.jpg" alt="Каньон" width="512" height="256">
+        <img src="img/reason2.jpg" width="800" height="401" alt="Каньон">
         <div class="reason-blue">
           <h3>Там есть мост дьявола!</h3>
-          <span>— №2 —</span>
+          <span>&mdash; №2 &mdash;</span>
           <p>Да, по нему можно пройти! если конечно вы осмелитесь!</p>
         </div>
       </section>
       <section class="reasons">
         <div class="reason-gray">
           <h3>Небольшая площадь</h3>
-          <span>— №3 —</span>
+          <span>&mdash; №3 &mdash;</span>
           <p>Все достопримеча-тельности находятся очень близко</p>
         </div>
         <div class="reason-gray">
           <h3>Красивая дорога</h3>
-          <span>— №4 —</span>
+          <span>&mdash; №4 &mdash;</span>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
         <div class="reason-gray">
           <h3>Мало туристов</h3>
-          <span>— №5 —</span>
+          <span>&mdash; №5 &mdash;</span>
           <p>Большинство едут в гранд каньон и толпиться там</p>
         </div>
       </section>
@@ -80,34 +80,48 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
         <!--Здесь будет форма-->
-         <form action="/echo" method="post">
-
-         	<div class="date">
-         	<label>Дата заезда:<input type="date" name="arrive"></label><br>
-         	<label>Дата выезда:<input type="date" name="leave"></label><br>
-         </div>
-         
-         	  <div class="number_people">
-         	  	<label>Взрослые: <input type="number" min="1" max="10" id="" name="Adults" value="2"></label>
-         	  <label> Дети: <input type="number" min="1" max="10" id="day" name="Children" value="0"></label></div>
-         	  
-        
-         	<input type="submit" name="find" value="Найти">
-         </form>
-        <div class="map"><img src="img/map.jpg" alt="карта"></div>
+        <form action="/echo" method="post">
+          <div class="date">
+            <p>
+              <label>Дата заезда:</label>
+              <input type="text" name="arrive">
+              <button type="button">Календарь</button>
+            </p>
+            <p>
+              <label>Дата выезда:</label>
+              <input type="text" name="leave">
+            </p>
+          </div>
+          <div class="number-people">
+            <p>
+              <label>Взрослые:</label>
+              <button type="button">+</button>
+              <input type="text" id="adults" name="adults" value="2">
+              <button type="button">-</button>
+            </p>
+            <p>
+              <label for="children">Дети:</label>
+              <button type="button">+</button>
+              <input type="text" id="children" name="children" value="0">
+              <button type="button">-</button>
+            </p>
+          </div>
+          <button type="submit">Найти</button>
+        </form>
+        <div class="map"><img src="img/map.jpg" width="1200" height="594" alt="карта"></div>
       </section>
     </main>
     <footer class="main-footer footer-index">
       <p class="hashtag">#VisitSedona</p>
       <ul class="footer-social">
-        <li><a class="social-btn" href="#">Twitter</a></li>
-        <li><a class="social-btn" href="#">Facebook</a></li>
-        <li><a class="social-btn" href="#">Youtube</a></li>
+        <li><a class="social-btn" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-btn" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-btn" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
       <div class="copyright">
         <span>Website by</span>
         <a href="https://htmlacademy.ru/">
-  		    <img src="img/logo-htmlacademy.svg" alt="html Academy" width="115" height="41">
+  		    <img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="html Academy">
   		</a>
       </div>
     </footer>
