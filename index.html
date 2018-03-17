@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,13 +25,13 @@
     <main class="page-main">
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img src="img/welcome.png" width="768" height="512" alt="welcome">
+        <img src="img/welcome.png" width="458" height="352" alt="welcome">
         <p class="welcome-title">Седона-небольшой городок в аризоне,заслуживающий большего!</p>
         <p class="welcome-text">Рассмотрим пять причин, почему Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="reasons">
         <div class="reason-blue">
-          <h3>Настоящий городок</h3>
+          <h3 class="reasonsh3">Настоящий городок</h3>
           <span>&mdash; №1 &mdash;</span>
           <p>Седона— не аттракцион для туристов, там течет своя жизнь</p>
         </div>
@@ -37,15 +40,15 @@
       <section class="features">
         <ul class="feauters-list">
           <li class="feauters-item feauters-item-house">
-            <h3>Жилье</h3>
+            <h3 class="reasonsh3">Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="feauters-item feauters-item-eat">
-            <h3>Еда</h3>
+            <h3 class="reasonsh3">Еда</h3>
             <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
           </li>
           <li class="feauters-item feauters-item-gift">
-            <h3>Сувениры</h3>
+            <h3 class="reasonsh3">Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
@@ -53,24 +56,24 @@
       <section class="reasons">
         <img src="img/reason2.jpg" width="800" height="401" alt="Каньон">
         <div class="reason-blue">
-          <h3>Там есть мост дьявола!</h3>
+          <h3 class="reasonsh3">Там есть мост дьявола!</h3>
           <span>&mdash; №2 &mdash;</span>
           <p>Да, по нему можно пройти! если конечно вы осмелитесь!</p>
         </div>
       </section>
       <section class="reasons">
         <div class="reason-gray">
-          <h3>Небольшая площадь</h3>
+          <h3 class="reasonsh3">Небольшая площадь</h3>
           <span>&mdash; №3 &mdash;</span>
           <p>Все достопримеча-тельности находятся очень близко</p>
         </div>
         <div class="reason-gray">
-          <h3>Красивая дорога</h3>
+          <h3 class="reasonsh3">Красивая дорога</h3>
           <span>&mdash; №4 &mdash;</span>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
         <div class="reason-gray">
-          <h3>Мало туристов</h3>
+          <h3 class="reasonsh3">Мало туристов</h3>
           <span>&mdash; №5 &mdash;</span>
           <p>Большинство едут в гранд каньон и толпиться там</p>
         </div>
@@ -78,35 +81,35 @@
       <section class="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button type="button" class="btn-search">Поиск гостиницы в Седоне</button>
         <!--Здесь будет форма-->
-        <form action="/echo" method="post">
+        <form class="form-one" action="/echo" method="post">
           <div class="date">
             <p>
-              <label>Дата заезда:</label>
-              <input type="text" name="arrive">
+              <label for="arrive" class="field-name">Дата заезда:</label>
+              <input class="field-enter" type="text" name="arrive" id="arrive">
               <button type="button">Календарь</button>
             </p>
             <p>
-              <label>Дата выезда:</label>
-              <input type="text" name="leave">
+              <label for="leave" class="field-name">Дата выезда:</label>
+              <input class="field-enter" type="text" name="leave" id="leave">
             </p>
           </div>
           <div class="number-people">
             <p>
-              <label>Взрослые:</label>
-              <button type="button">+</button>
-              <input type="text" id="adults" name="adults" value="2">
-              <button type="button">-</button>
+              <label for="adults" class="field-name">Взрослые:</label>
+              <button type="button" class="btn-other">+</button>
+              <input class="field-enter" type="text" id="adults" name="adults" value="2">
+              <button type="button" class="btn-other">-</button>
             </p>
             <p>
-              <label for="children">Дети:</label>
-              <button type="button">+</button>
-              <input type="text" id="children" name="children" value="0">
-              <button type="button">-</button>
+              <label for="children" class="field-name">Дети:</label>
+              <button type="button" class="btn-other">+</button>
+              <input class="field-enter" type="text" id="children" name="children" value="0">
+              <button type="button" class="btn-other">-</button>
             </p>
           </div>
-          <button type="submit">Найти</button>
+          <button type="submit" class="btn-start-search">Найти</button>
         </form>
         <div class="map"><img src="img/map.jpg" width="1200" height="594" alt="карта"></div>
       </section>
@@ -114,9 +117,9 @@
     <footer class="main-footer footer-index">
       <p class="hashtag">#VisitSedona</p>
       <ul class="footer-social">
-        <li><a class="social-btn" href="#"><span class="visually-hidden">Twitter</span></a></li>
-        <li><a class="social-btn" href="#"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a class="social-btn" href="#"><span class="visually-hidden">Youtube</span></a></li>
+        <li><a class="social-btn" href="https://twitter.com"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-btn" href="https://www.facebook.com"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-btn" href="https://www.youtube.com"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
       <div class="copyright">
         <span>Website by</span>
