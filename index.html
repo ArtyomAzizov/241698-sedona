@@ -25,8 +25,13 @@
     <main class="page-main">
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img src="img/welcome.png" width="458" height="352" alt="welcome">
-        <p class="welcome-title">Седона-небольшой городок в аризоне,заслуживающий большего!</p>
+        <div class="welcome-img">
+          <img src="img/welcome.png" width="458" height="352" alt="welcome">
+        </div>
+        <div class="zig">
+          <img src="img/welcome_zigzag3.png" width="1200" height="57" alt="">
+        </div>
+        <p class="welcome-title">Седона-небольшой городок в аризоне, заслуживающий большего!</p>
         <p class="welcome-text">Рассмотрим пять причин, почему Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="reasons">
@@ -35,7 +40,10 @@
           <span>&mdash; №1 &mdash;</span>
           <p>Седона— не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src="img/reason1.jpg" width="800" height="401" alt="Седона">
+        <div class="wrap-img">
+          <!-- ??? -->
+          <img src="img/reason1.jpg" width="800" height="256" alt="Седона">
+        </div>
       </section>
       <section class="features">
         <ul class="feauters-list">
@@ -54,7 +62,9 @@
         </ul>
       </section>
       <section class="reasons">
-        <img src="img/reason2.jpg" width="800" height="401" alt="Каньон">
+        <div class="wrap-img">
+          <img src="img/reason2.jpg" width="800" height="256" alt="Каньон">
+        </div>
         <div class="reason-blue">
           <h3 class="reasonsh3">Там есть мост дьявола!</h3>
           <span>&mdash; №2 &mdash;</span>
@@ -84,30 +94,32 @@
         <button type="button" class="btn-search">Поиск гостиницы в Седоне</button>
         <!--Здесь будет форма-->
         <form class="form-one" action="/echo" method="post">
-          <div class="date">
-            <p>
-              <label for="arrive" class="field-name">Дата заезда:</label>
-              <input class="field-enter" type="text" name="arrive" id="arrive">
-              <button type="button">Календарь</button>
-            </p>
-            <p>
-              <label for="leave" class="field-name">Дата выезда:</label>
-              <input class="field-enter" type="text" name="leave" id="leave">
-            </p>
-          </div>
-          <div class="number-people">
-            <p>
-              <label for="adults" class="field-name">Взрослые:</label>
-              <button type="button" class="btn-other">+</button>
-              <input class="field-enter" type="text" id="adults" name="adults" value="2">
-              <button type="button" class="btn-other">-</button>
-            </p>
-            <p>
-              <label for="children" class="field-name">Дети:</label>
-              <button type="button" class="btn-other">+</button>
-              <input class="field-enter" type="text" id="children" name="children" value="0">
-              <button type="button" class="btn-other">-</button>
-            </p>
+          <div class="wrap-form">
+            <div class="date">
+              <p>
+                <label for="arrive" class="field-name">Дата заезда:</label>
+                <input class="field-enter" type="text" name="arrive" id="arrive">
+                <button type="button">Календарь</button>
+              </p>
+              <p>
+                <label for="leave" class="field-name">Дата выезда:</label>
+                <input class="field-enter" type="text" name="leave" id="leave">
+              </p>
+            </div>
+            <div class="number-people">
+              <p>
+                <label for="adults" class="field-name">Взрослые:</label>
+                <button type="button" class="btn-other">+</button>
+                <input class="field-enter" type="text" id="adults" name="adults" value="2">
+                <button type="button" class="btn-other">-</button>
+              </p>
+              <p>
+                <label for="children" class="field-name">Дети:</label>
+                <button type="button" class="btn-other">+</button>
+                <input class="field-enter" type="text" id="children" name="children" value="0">
+                <button type="button" class="btn-other">-</button>
+              </p>
+            </div>
           </div>
           <button type="submit" class="btn-start-search">Найти</button>
         </form>
@@ -117,9 +129,9 @@
     <footer class="main-footer footer-index">
       <p class="hashtag">#VisitSedona</p>
       <ul class="footer-social">
-        <li><a class="social-btn" href="https://twitter.com"><span class="visually-hidden">Twitter</span></a></li>
-        <li><a class="social-btn" href="https://www.facebook.com"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a class="social-btn" href="https://www.youtube.com"><span class="visually-hidden">Youtube</span></a></li>
+        <li><a class="social-btn" href="https://twitter.com"><img src="img/twitter.svg"  width="46" height="48" alt="Twitter"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-btn" href="https://www.facebook.com"><img src="img/fb-icon.svg"  width="46" height="48" alt="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-btn" href="https://www.youtube.com"><img src="img/youtube.svg"  width="46" height="48" alt="Youtube"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
       <div class="copyright">
         <span>Website by</span>
