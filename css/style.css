@@ -562,6 +562,31 @@ a {
   position: relative;
 }
 
+@keyframes bounce {
+  /*0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }*/
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .form-one {
   position: absolute;
   -webkit-box-sizing: border-box;
